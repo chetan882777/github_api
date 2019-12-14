@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textLabel_freeRides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textLabel_credits"
+        app:layout_constraintStart_toEndOf="@+id/textLabel_rides"
+        app:layout_constraintTop_toTopOf="@+id/textLabel_rides"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:text="@string/free_rides"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/textView_freeRides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textLabel_freeRides"
+        app:layout_constraintStart_toStartOf="@+id/textLabel_freeRides"
+        app:layout_constraintTop_toBottomOf="@+id/textLabel_freeRides"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/textLabel_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/credits"
+        android:textAllCaps="true"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textLabel_freeRides"
+        app:layout_constraintTop_toTopOf="@+id/textLabel_rides"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/textView_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textLabel_credits"
+        app:layout_constraintStart_toStartOf="@+id/textLabel_credits"
+        app:layout_constraintTop_toBottomOf="@+id/textLabel_credits"
+        tools:text="$100" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_image_holder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/profile_address"
+        app:layout_constraintStart_toEndOf="@+id/profile_image_holder"
+        app:layout_constraintTop_toTopOf="@+id/profile_image_holder"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Chetan Pawar" />
+
+    <TextView
+        android:id="@+id/profile_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="Barwani, India"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image_holder"
+        app:layout_constraintStart_toStartOf="@+id/profile_name"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textLabel_rides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/rides"
+        android:textAllCaps="true"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textLabel_freeRides"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_holder"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/textView_rides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="67"
+        android:textSize="24sp"
+        android:textColor="@android:color/primary_text_dark"
+        app:layout_constraintEnd_toEndOf="@+id/textLabel_rides"
+        app:layout_constraintStart_toStartOf="@+id/textLabel_rides"
+        app:layout_constraintTop_toBottomOf="@+id/textLabel_rides" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

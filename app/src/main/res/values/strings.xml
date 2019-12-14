@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GitHub</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="my_profile">My Profile</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="rides">Rides</string>
+    <string name="free_rides">Free Rides</string>
+    <string name="credits">Credits</string>
+    <string name="past_trips">Past trips</string>
+</resources>
